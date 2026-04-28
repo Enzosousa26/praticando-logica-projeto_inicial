@@ -1,2 +1,2 @@
-# 3411-praticando-logica-projeto_inicial
+praticando-logica-projeto_inicial
 Praticando e reforcando exercicio do curso de logica de progamação
