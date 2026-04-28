@@ -5,12 +5,22 @@ function sortear(){
     let sorteados = [];
     let numero;
     
+    function protecaoContraBug(){
+    document.getElementById('quantidade').value = '';
+    document.getElementById('ate').value = '';
+    document.getElementById('de').value = '';
+    document.getElementById('resultado').innerHTML = '<label class="texto__paragrafo">Números sorteados:  nenhum até agora</label>';
+}
+
+
     if (de >= ate){
         alert('Para de tentar bugar o bagulho seu loko');
+        protecaoContraBug();
         return;
     }
 
     if(quantidade > (ate - de + 1)){
+        protecaoContraBug();
         alert('Quantidade de numeros invalida. Coloque uma quantidade de numero adequada');
         return;
     }
