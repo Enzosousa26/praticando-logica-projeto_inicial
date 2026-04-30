@@ -14,15 +14,19 @@ function adicionar(){
     let quantidade = document.getElementById('quantidade').value;
     let preco = quantidade * valorUnitario;
 
-    let listaProdutos = document.getElementById('lista-produtos');
-    listaProdutos.innerHTML =  listaProdutos.innerHTML + `<section class="carrinho__produtos__produto"><span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${preco}</span></section>`;
+    if(confirm(`Quer realmente adicionar o produto "${nomeProduto}" ao carrinho?`)){
+        let listaProdutos = document.getElementById('lista-produtos');
+        listaProdutos.innerHTML =  listaProdutos.innerHTML + `<section class="carrinho__produtos__produto"><span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${preco}</span></section>`;
 
-    subTotal = subTotal + preco;
+        subTotal = subTotal + preco;
 
-    let resultado = document.getElementById('valor-total');
-    resultado.innerHTML = `<span class="texto-azul" id="valor-total">R$${subTotal}</span>`;
+        let resultado = document.getElementById('valor-total');
+        resultado.innerHTML = `<span class="texto-azul" id="valor-total">R$${subTotal}</span>`;
 
-    document.getElementById('quantidade').value = '';
+        document.getElementById('quantidade').value = '';
+    }
+
+    
     
 }
 
