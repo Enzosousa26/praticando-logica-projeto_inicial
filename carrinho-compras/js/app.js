@@ -1,6 +1,7 @@
 let subTotal = 0;
 document.getElementById('lista-produtos').innerHTML = '';
 document.getElementById('valor-total').innerHTML = 'R$ 0';
+document.getElementById('produto').value = '';
 
 function adicionar(){
     //recuperar valores nome do produto, quantidade e valor
