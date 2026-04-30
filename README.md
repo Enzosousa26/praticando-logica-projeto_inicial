@@ -1,7 +1,7 @@
 praticando-logica-projeto_inicial.
 
 Praticando e reforcando exercicio do curso de logica de progamação
-
+Exercicios e projetos feitos para praticar:
 
 <a href="https://enzosousa26.github.io/praticando-logica-projeto_inicial/sorteador-numeros/index.html" target="_blank">Jogo Sorteador de numeros</a>
 
