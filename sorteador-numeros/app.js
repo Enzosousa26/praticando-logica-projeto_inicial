@@ -14,7 +14,7 @@ function sortear(){
 
 
     if (de >= ate){
-        alert('Para de tentar bugar o bagulho seu loko');
+        alert('Para de tentar bugar o bagulho seu loko!');
         protecaoContraBug();
         return;
     }
